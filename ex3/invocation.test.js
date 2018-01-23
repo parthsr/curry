@@ -16,7 +16,7 @@ describe('test cases', () => {
   test('sending array', () => {
     expect(typeof invocation(1)).toBe(typeof function CHECK() {});
   });
-  // test('sending null', () => {
-  //   expect(invocation(null)(1)).toBe(2);
-  // });
+  test('sending null', () => {
+    expect(invocation(null)(1)).toBe(1);
+  });
 });
