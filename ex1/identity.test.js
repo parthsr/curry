@@ -17,9 +17,9 @@ describe('testing the function by passing different arguments', () => {
   test('testing by sending object', () => {
     expect(identity({ lol: 1, lolol: 2 })).toEqual({ lol: 1, lolol: 2 });
   });
-  // test('testing by sending function', () => {
-  //   expect(identity(xx)).toBe(xx);
-  // });
+  test('testing by sending function', () => {
+    expect(identity(xx)).toBe(xx);
+  });
   // test('testing by sending number', () => {
   //   expect(identity(undefined)).toBe(undefined);
   // });
