@@ -19,4 +19,7 @@ describe('passing different test cases', () => {
   test('sending null', () => {
     expect(binary(null, 1)).toBe(1);
   });
+  test('sending neg and pos numbers', () => {
+    expect(binary(1, -2)).toBe(-1);
+  });
 });
