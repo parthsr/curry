@@ -11,13 +11,13 @@ describe('test cases', () => {
     expect(invocation(undefined)(undefined)).toBe(NaN);
   });
   test('sending array', () => {
-    expect(invocation([1, 2, 3])([4, 5, 6])).toBe('1,2,34,5,6');
+    expect(invocation([1, 2, 3])([4, 5, 6])).toBe(false);
   });
-  test('sending array', () => {
-    expect(typeof invocation(1)).toBe(typeof function CHECK() {});
+  test('sending single value', () => {
+    expect(typeof invocation(1)).toBe('function');
   });
   test('sending null', () => {
-    expect(invocation(null)(1)).toBe(1);
+    expect(invocation(null)(1)).toBe(false);
   });
   test('sending empty', () => {
     expect(invocation()()).toBe(NaN);
