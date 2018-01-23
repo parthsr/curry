@@ -22,9 +22,9 @@ describe('test cases for the program', () => {
   test('testcase 7 by passing undefined', () => {
     expect(invoc(undefined)).toBe(20);
   });
-  // test('testcase 8 by passing arrays', () => {
-  //   expect(invoc([1, 2])).toBe(20);
-  // });
+  test('testcase 8 by passing arrays', () => {
+    expect(invoc([1, 2])).toBe(20);
+  });
   // test('testcase 9', () => {
   //   expect(invoc({ kk: 5 })).toBe(20);
   // });
