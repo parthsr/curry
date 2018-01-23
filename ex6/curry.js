@@ -14,3 +14,5 @@ function curry(normalfunc) {
   };
 }
 module.exports = curry;
+
+// console.log(curry((a, b, c) => a + b + c)(1, 2, 3));

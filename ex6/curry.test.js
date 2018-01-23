@@ -1,5 +1,7 @@
+let curry = require('./curry');
+
 function normalfunc(a, b, c) {
-  console.log(a + b + c);
+  return a + b + c;
 }
 
 let normalcall = curry(normalfunc);
