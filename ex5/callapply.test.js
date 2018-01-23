@@ -14,6 +14,12 @@ describe('test cases for valid usage', () => {
   test('testcase 2 for valid input', () => {
     expect(callAndApply.applier(person, update, ['parth', '22', 'L'])).toEqual({ age: '22', name: 'parth', tShirtSize: 'L' });
   });
+  test('test case 3 for typeof checking', () => {
+    expect(typeof callAndApply.applier(person, update, ['parth', '22', 'L'])).toEqual('object');
+  });
+  test('test case 3 for typeof checking', () => {
+    expect(typeof callAndApply.caller(person, update, 'parth', '22', 'L')).toEqual('object');
+  });
 });
 
 describe('test cases for invalid usage', () => {
