@@ -26,7 +26,16 @@ describe('test cases for invalid usage', () => {
   test('testcase 3 for valid input array is object', () => {
     expect(callAndApply.applier([1, 2, 3], update, ['parth', '22', 'L'])).toEqual(false);
   });
-  test('testcase 2 for valid input undefined as object', () => {
+  test('testcase 4 for valid input undefined as object', () => {
     expect(callAndApply.applier(undefined, update, ['parth', '22', 'L'])).toEqual(false);
+  });
+  test('testcase 5 for valid input 1 as object', () => {
+    expect(callAndApply.caller(1, update, 'parth', '22', 'L')).toEqual(false);
+  });
+  test('testcase 6 for valid input array is object', () => {
+    expect(callAndApply.caller([1, 2, 3], update, 'parth', '22', 'L')).toEqual(false);
+  });
+  test('testcase 7 for valid input undefined as object', () => {
+    expect(callAndApply.caller(undefined, update, 'parth', '22', 'L')).toEqual(false);
   });
 });
