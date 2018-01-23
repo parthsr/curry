@@ -19,4 +19,7 @@ describe('test cases', () => {
   test('sending null', () => {
     expect(invocation(null)(1)).toBe(1);
   });
+  test('sending empty', () => {
+    expect(invocation()()).toBe(NaN);
+  });
 });
