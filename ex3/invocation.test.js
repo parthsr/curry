@@ -13,4 +13,10 @@ describe('test cases', () => {
   test('sending array', () => {
     expect(invocation([1, 2, 3])([4, 5, 6])).toBe('1,2,34,5,6');
   });
+  test('sending array', () => {
+    expect(typeof invocation(1)).toBe(typeof function CHECK() {});
+  });
+  // test('sending null', () => {
+  //   expect(invocation(null)(1)).toBe(2);
+  // });
 });
