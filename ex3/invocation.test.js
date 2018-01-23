@@ -7,4 +7,7 @@ describe('test cases', () => {
   test('passing strings', () => {
     expect(invocation('hello')('hello')).toBe('hellohello');
   });
+  test('passing undefined', () => {
+    expect(invocation(undefined)(undefined)).toBe(NaN);
+  });
 });
