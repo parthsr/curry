@@ -20,9 +20,9 @@ describe('testing the function by passing different arguments', () => {
   test('testing by sending function', () => {
     expect(identity(xx)).toBe(xx);
   });
-  // test('testing by sending number', () => {
-  //   expect(identity(undefined)).toBe(undefined);
-  // });
+  test('testing by sending number', () => {
+    expect(identity(undefined)).toBe(undefined);
+  });
   // test('testing by sending number', () => {
   //   expect(identity(null)).toBe(null);
   // });
