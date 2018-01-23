@@ -17,7 +17,7 @@ describe('passing different test cases', () => {
     expect(binary()).toBe(NaN);
   });
   test('sending null', () => {
-    expect(binary(null, 1)).toBe(1);
+    expect(binary(null, 1)).toBe(false);
   });
   test('sending neg and pos numbers', () => {
     expect(binary(1, -2)).toBe(-1);
