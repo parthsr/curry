@@ -26,4 +26,7 @@ describe('testing the function by passing different arguments', () => {
   test('testing by sending number', () => {
     expect(identity(null)).toBe(null);
   });
+  test('testing by sending number', () => {
+    expect(identity(true)).toBe(true);
+  });
 });
