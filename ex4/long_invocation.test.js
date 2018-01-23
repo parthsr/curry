@@ -13,9 +13,9 @@ describe('test cases for the program', () => {
   test('testcase 4 by passing nothing', () => {
     expect(invoc()).toBe(20);
   });
-  // test('testcase 5 byu passing strings', () => {
-  //   expect(invoc('stringg')).toBe(20);
-  // });
+  test('testcase 5 byu passing strings', () => {
+    expect(invoc('stringg')).toBe(20);
+  });
   // test('testcase 6 by passing null', () => {
   //   expect(invoc(null)).toBe(20);
   // });
