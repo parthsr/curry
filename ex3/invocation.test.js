@@ -10,4 +10,7 @@ describe('test cases', () => {
   test('passing undefined', () => {
     expect(invocation(undefined)(undefined)).toBe(NaN);
   });
+  test('sending array', () => {
+    expect(invocation([1, 2, 3])([4, 5, 6])).toBe('1,2,34,5,6');
+  });
 });
