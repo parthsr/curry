@@ -11,4 +11,7 @@ describe('test cases for valid usage', () => {
   test('testcase 1 for valid input', () => {
     expect(callAndApply.caller(person, update, 'parth', '22', 'L')).toEqual({ age: '22', name: 'parth', tShirtSize: 'L' });
   });
+  test('testcase 2 for valid input', () => {
+    expect(callAndApply.applier(person, update, ['parth', '22', 'L'])).toEqual({ age: '22', name: 'parth', tShirtSize: 'L' });
+  });
 });
