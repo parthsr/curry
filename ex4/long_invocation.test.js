@@ -7,9 +7,9 @@ describe('test cases for the program', () => {
   test('testcase 2 by passing nothing', () => {
     expect(invoc()).toBe(10);
   });
-  // test('testcase 3 by passing number', () => {
-  //   expect(typeof invoc(10)).toBe(typeof function random() {});
-  // });
+  test('testcase 3 by passing number', () => {
+    expect(typeof invoc(10)).toBe(typeof function random() {});
+  });
   // test('testcase 4 by passing nothing', () => {
   //   expect(invoc()).toBe(20);
   // });
