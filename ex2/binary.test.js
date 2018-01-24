@@ -1,25 +1,25 @@
 let binary = require('./binary.js');
 
 describe('passing different test cases', () => {
-  test('sending numbers', () => {
+  it('sending numbers', () => {
     expect(binary(1, 2)).toBe(3);
   });
-  test('sending strings', () => {
+  it('sending strings', () => {
     expect(binary('hello', 'hello')).toBe('hellohello');
   });
-  test('sending array', () => {
+  it('sending array', () => {
     expect(binary([1, 2, 3], [4, 5, 6])).toBe('1,2,34,5,6');
   });
-  test('sending undefined', () => {
+  it('sending undefined', () => {
     expect(binary(undefined, 2)).toBe(NaN);
   });
-  test('sending empty', () => {
+  it('sending empty', () => {
     expect(binary()).toBe(NaN);
   });
-  test('sending null', () => {
+  it('sending null', () => {
     expect(binary(null, 1)).toBe(false);
   });
-  test('sending neg and pos numbers', () => {
+  it('sending neg and pos numbers', () => {
     expect(binary(1, -2)).toBe(-1);
   });
 });
