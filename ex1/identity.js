@@ -1,5 +1,3 @@
-function identity(args) {
-  return args;
-}
+let identity = args => args;
 
 module.exports = identity;
