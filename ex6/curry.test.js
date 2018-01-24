@@ -18,7 +18,7 @@ describe('testing use case', () => {
     expect(normalcall(1)(2)(3)).toBe(6);
   });
   test('test case 1 for valid output', () => {
-    expect(normalcall(1, 2, 3, 4)).toBe(6);
+    expect(typeof normalcall(1, 2)).toBe('function');
   });
   // test('test case 1 for valid output', () => {
   //   expect(normalcall(1, 2, 3)(4)).toBe(6);
